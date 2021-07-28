@@ -1,0 +1,45 @@
+.navbar {
+  background-color: white;
+  transition: 0.5s background-color ease;
+  padding: 14px;
+  width: 100vw;
+  outline: 2px solid $lightgold;
+  outline-offset: -10px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-white {
+  background-color: white;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+}
+
+.nav-item-logo {
+  flex: 2 1 auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 12.5vw;
+}
+
+.nav-link {
+  -webkit-text-stroke: 0.25px $darkgreen;
+  -webkit-text-fill-color: $lightgold;
+  font-weight: bolder;
+  font-size: 16pt;
+  font-variant: small-caps;
+}
