@@ -3,6 +3,7 @@
   transition: 0.5s background-color ease;
   padding: 14px;
   width: 100vw;
+  height: 90px;
   outline: 2px solid $lightgold;
   outline-offset: -10px;
 }
@@ -26,20 +27,35 @@
 }
 
 .nav-item {
-  flex: 1 1 auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item-back {
+  flex: 0 1 auto;
+  justify-content: flex-start;
+  align-self: flex-end;
+  a {
+    padding: 0;
+  }
 }
 
 .nav-item-logo {
-  flex: 2 1 auto;
+  flex: 1.2 1 auto;
   display: flex;
   justify-content: center;
-  padding-left: 12.5vw;
 }
 
 .nav-link {
   -webkit-text-stroke: 0.25px $darkgreen;
-  -webkit-text-fill-color: $lightgold;
+  -webkit-text-fill-color: rgba($gold,0.3);
   font-weight: bolder;
-  font-size: 16pt;
+  font-size: 18pt;
   font-variant: small-caps;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  -webkit-text-stroke: 0.5px $darkgreen;
+  -webkit-text-fill-color: rgba($gold,0.8);
 }
