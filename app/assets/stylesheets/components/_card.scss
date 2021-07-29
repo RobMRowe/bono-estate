@@ -1,0 +1,41 @@
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-content {
+  background-color: rgba(white,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33vw;
+  height: 66vh;
+  padding: 2vw 4vh;
+  outline: 2px solid rgba($lightgold,0.5);
+  outline-offset: -10px;
+  * {
+    color: $lightgold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    // font-variant: small-caps;
+    padding: 30px;
+    text-align: center;
+  }
+  span, p, img {
+    padding: 0;
+    margin: 0;
+  }
+  #ev, #region {
+    font-size: 20px;
+  }
+  #country, #oil {
+    font-size: 34px;
+  }
+  #description {
+    font-size: 24px;
+    width: 50%;
+  }
+}
