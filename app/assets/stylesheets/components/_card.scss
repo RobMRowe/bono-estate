@@ -1,41 +1,87 @@
-.card-wrapper {
+.card-container {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.card-container-vertical {
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 50vw;
+}
+
+.card-container-horizontal {
+  width: 100%;
+  padding: 0;
+}
+
+.card-container-outer {
+  max-width: 80vw;
+  margin-top: 25px;
+}
+
+.card-content {
+  background-color: rgba(white,0.33);
+  padding: 14px;
+  outline: 2px solid $lightgold;
+  outline-offset: -10px;
+  p, h2, h3, figcaption {
+    -webkit-text-stroke: 0.1px rgba($darkgreen,0.5);
+    -webkit-text-fill-color: $lightgold;
+    font-size: 16pt;
+  }
+  h2, h3, figcaption {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bolder;
+  }
+}
+
+.card-text-only, .card-logo-with-text {
+  max-width: 33vw;
+  margin-bottom: 24px;
+  p {
+    text-indent: 1em;
+    line-height: 1.75em;
+    padding-bottom: 1em;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.card-logo-with-text {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-bottom: 52px;
+  }
+}
+
+.card-img-with-caption {
+  display: flex;
+  flex-direction: column;
+  img {
+    align-self: center;
+    flex: 0 0 auto;
+    max-height: 450px;
+    max-width: 850px;
+  }
+}
+
+.card-container-simple {
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 
-.card-content {
-  background-color: rgba(white,0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 33vw;
-  height: 66vh;
-  padding: 2vw 4vh;
-  outline: 2px solid rgba($lightgold,0.5);
-  outline-offset: -10px;
-  * {
-    color: $lightgold;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    // font-variant: small-caps;
-    padding: 30px;
-    text-align: center;
-  }
-  span, p, img {
-    padding: 0;
-    margin: 0;
-  }
-  #ev, #region {
-    font-size: 20px;
-  }
-  #country, #oil {
-    font-size: 34px;
-  }
-  #description {
-    font-size: 24px;
-    width: 50%;
-  }
+.centered-text {
+  text-align: center;
 }
