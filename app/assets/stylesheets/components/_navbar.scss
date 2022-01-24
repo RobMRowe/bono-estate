@@ -1,5 +1,4 @@
 .navbar {
-  background-color: white;
   transition: 0.5s background-color ease;
   padding: 14px;
   width: 100%;
@@ -49,7 +48,7 @@
 
 .nav-link {
   -webkit-text-stroke: 0.25px $darkgreen;
-  -webkit-text-fill-color: rgba($gold,0.3);
+  -webkit-text-fill-color: rgba($light-gray,0.8);
   font-weight: bolder;
   font-size: 18pt;
   font-variant: small-caps;
@@ -57,5 +56,5 @@
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {
   -webkit-text-stroke: 0.5px $darkgreen;
-  -webkit-text-fill-color: rgba($gold,0.8);
+  -webkit-text-fill-color: rgba($lightgold,0.8);
 }
