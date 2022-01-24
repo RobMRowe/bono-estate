@@ -29,7 +29,7 @@
   p, h2, h3, figcaption {
     -webkit-text-stroke: 0.1px rgba($darkgreen,0.5);
     -webkit-text-fill-color: $lightgold;
-    font-size: 16pt;
+    font-size: 1.3em;
   }
   h2, h3, figcaption {
     text-align: center;
@@ -39,20 +39,21 @@
 }
 
 .card-text-only, .card-logo-with-text {
-  max-width: 33vw;
-  margin-bottom: 24px;
+  max-width: 32vw;
+  min-width: 42%;
+  margin-bottom: 2%;
   p {
     text-indent: 1em;
     line-height: 1.75em;
-    padding-bottom: 1em;
-    font-size: 28px;
+    padding-left: 1em 0.4em;
+    font-size: 1.3em;
   }
   h2 {
-    font-size: 36px;
-    margin-bottom: 32px;
+    font-size: 1.5em;
+    margin-bottom: 1.4em;
   }
   h3 {
-    font-size: 32px;
+    font-size: 1.4em;
     margin-bottom: 0;
   }
 }
@@ -61,18 +62,25 @@
   display: flex;
   flex-direction: column;
   img {
-    margin-bottom: 52px;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    width: 100%;
   }
 }
 
 .card-img-with-caption {
   display: flex;
   flex-direction: column;
+  margin: 2%;
   img {
     align-self: center;
     flex: 0 0 auto;
     max-height: 450px;
     max-width: 850px;
+    width: 100%;
+  }
+  figcaption {
+    min-width: 20vw;
   }
 }
 
