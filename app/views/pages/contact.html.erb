@@ -1,2 +1,25 @@
-<%= image_tag "bottle-photo-cutout.png", alt: "Bono Estate Extra Virgin Olive Oil", class:"bottle-photo-cutout" %>
+<div class="card-container card-container-outer card-container-simple">
+  <%= image_tag "bottle-photo-cutout.png", alt: "Bono Estate Extra Virgin Olive Oil", class:"bottle-photo-cutout" %>
+  <div class="card-container card-container-vertical">
+    <div class="card-content card-logo-with-text">
+      <%= image_tag "bono-estate-logo.svg", alt: "Bono Estate", height: 128 %>
+      <p>If you'd like to make an enquiry about Bono Estate, please get in touch via e-mail:</p>
+      <a class="contact-email" href="mailto:enquiries@bono-estate.com?subject=Bono Estate Enquiry">enquiries@bono-estate.com</a>
+      <p>...or follow us on all of your favourite social media platforms:</p>
+      <ul class="list-inline contact-container">
+        <li class="contact-social">
+        <%= link_to "#", class: "contact-link contact-item" do %>
+          <i class="fab fa-facebook"></i>
+        <% end %>
+        <%= link_to "#", class: "contact-link contact-item" do %>
+          <i class="fab fa-twitter"></i>
+        <% end %>
+        <%= link_to "#", class: "contact-link contact-item" do %>
+          <i class="fab fa-instagram"></i>
+        <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 <%= image_tag "triple-blend-stamp.svg", alt: "Triple Blend Oil", class:"triple-blend-stamp" %>

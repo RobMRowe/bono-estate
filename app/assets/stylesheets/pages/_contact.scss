@@ -1,0 +1,29 @@
+.contact-email {
+  font-size: 18pt;
+  text-align: center;
+  padding-bottom: 0.9em;
+}
+
+.contact-container {
+  width: 60%;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.contact-social {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-link {
+  color: $light-gray;
+  font-weight: lighter;
+  font-size: 40pt;
+}
+
+.contact-link > i {
+  width: 80px;
+  height: 80px;
+}
