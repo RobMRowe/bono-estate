@@ -1,24 +1,7 @@
-# README
+Website for Bono Estate.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build using Ruby (v2.7.3) on Rails (v6.0.4) with Node (v14.18.3), incorporating elements from Le Wagon's web development bootcamp.
 
-Things you may want to cover:
+Currently employs PostgreSQL database, with a view to expanding and implementing a webstore in future.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+N.B. Site not yet published officially, but development version currently accessible at https://bono-estate.herokuapp.com/
